@@ -1,0 +1,53 @@
+.game {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  //grid-template-rows: repeat(3, 1fr);
+  padding: 1rem;
+  position: relative;
+}
+
+.number {
+  align-items: center;
+  border: 2px solid #000;
+  display: flex;
+  font-size: 4rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.bingo {
+  display: grid;
+  grid-template-columns: repeat(11, 50px);
+}
+
+.bingo__number {
+  align-items: center;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.number-appeared {
+  background-color: rgba(255, 136, 0, 0.726);
+}
+
+.number-user-correct {
+  background-color: #00ff00bb;
+}
+
+.number-pc-correct {
+  background-color: #ff0000c0;
+}
+
+.current-number {
+  font-size: 3rem;
+  grid-column: 1/-1;
+  margin: 0;
+}
