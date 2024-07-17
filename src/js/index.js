@@ -11,9 +11,10 @@ const bingoBoard = document.getElementById('bingo-board');
 const bingoSpans = bingoBoard.querySelectorAll('.bingo__number');
 
 const gameNumberBoard = 15;
-let numberBoard = [];
-let randomUserNumber = [];
-let randomPcNumber = [];
+const numberBoard = [];
+// const numberBoard = Array(99).fill.map((number, index)=> index+1)
+const randomUserNumber = [];
+const randomPcNumber = [];
 
 const generateBoardNumbers = () => {
   for (let i = 1; i <= 99; i++) {
